@@ -1411,40 +1411,41 @@
 
 // * ES6
 
-class Product {
-  constructor(brand, price, discount) {
-    this._brand = brand;
-    this.price = price;
-    this.discount = discount;
-  }
+// class Product {
+//   constructor(brand, price, discount) {
+//     this._brand = brand;
+//     this.price = price;
+//     this.discount = discount;
+//   }
 
-  get brand() {
-    return this._brand;
-  }
+//   get brand() {
+//     return this._brand;
+//   }
 
-  set brand(name) {
-    this._brand = name;
-  }
+//   set brand(name) {
+//     this._brand = name;
+//   }
 
-  getPriceWithDiscount() {
-    return this.price * (100 - this.discount) / 100;
-  } 
+//   getPriceWithDiscount() {
+//     return this.price * (100 - this.discount) / 100;
+//   } 
 
-  static getDescription() {
-    return 'Статический метод класса';
-  }
-}
+//   static getDescription() {
+//     return 'Статический метод класса';
+//   }
+// }
 
-class ChildrenProduct extends Product {
-  constructor(brand, price, discount) {
-    super(brand, price, discount);
-  }
-}
+// class ChildrenProduct extends Product {
+//   constructor(brand, price, discount) {
+//     super(brand, price, discount);
+//   }
+// }
 
-const apple = new Product('apple', 100, 15);
-console.log(apple, apple.getPriceWithDiscount());
-console.log(Product.getDescription());
-console.log(apple.brand);
+// const apple = new Product('apple', 100, 15);
+// console.log(apple, apple.getPriceWithDiscount());
+// console.log(Product.getDescription());
+// console.log(apple.brand);
 
-const iphone = new ChildrenProduct('iphone', 1000, 1);
-console.log(iphone.getPriceWithDiscount());
+// const iphone = new ChildrenProduct('iphone', 1000, 1);
+// console.log(iphone.getPriceWithDiscount());
+
